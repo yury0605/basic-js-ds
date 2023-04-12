@@ -20,12 +20,12 @@ class BinarySearchTree {
   }
 
   root() {
-    throw new NotImplementedError('Not implemented');
+    
     return this.rootFirst;
   }
 
   add(data) {
-    throw new NotImplementedError('Not implemented');
+    
     let newNode = new Node(data);
 
     if(this.rootFirst === null){
@@ -53,7 +53,7 @@ class BinarySearchTree {
   }
 
   has(data) {
-    throw new NotImplementedError('Not implemented');
+    
     let rootCurrent = this.rootFirst;
 
     while(rootCurrent !== null){
@@ -67,7 +67,7 @@ class BinarySearchTree {
   }
 
   find(data) {
-    throw new NotImplementedError('Not implemented');
+    
     let rootCurrent = this.rootFirst;
 
     while(rootCurrent !== null){
@@ -81,7 +81,7 @@ class BinarySearchTree {
   }
 
   remove(data) {
-    throw new NotImplementedError('Not implemented');
+    
     let rootCurrent = this.rootFirst;
     let rootParent = new Node(null);
     while (rootCurrent !== null) {
@@ -130,7 +130,7 @@ class BinarySearchTree {
   }
 
   min() {
-    throw new NotImplementedError('Not implemented');
+    
     let rootCurrent = this.rootFirst;
     while (rootCurrent !== null && rootCurrent.left !== null){
       rootCurrent = rootCurrent.left;
@@ -139,7 +139,7 @@ class BinarySearchTree {
   }
 
   max() {
-    throw new NotImplementedError('Not implemented');
+    
     let rootCurrent = this.rootFirst;
     while (rootCurrent !== null && rootCurrent.right !== null){
       rootCurrent = rootCurrent.right;
