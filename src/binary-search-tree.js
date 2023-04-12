@@ -25,8 +25,7 @@ class BinarySearchTree {
   }
 
   add(data) {
-    
-    let newNode = new Node(data);
+ /*  let newNode = new Node(data);
 
     if(this.rootFirst === null){
       this.rootFirst = newNode;
@@ -49,12 +48,12 @@ class BinarySearchTree {
           rootCurrent = rootCurrent.right;
         }
       }
-    }
-  }
+    } */
+}
 
   has(data) {
     
-    let rootCurrent = this.rootFirst;
+    /* let rootCurrent = this.rootFirst;
 
     while(rootCurrent !== null){
       if(data === rootCurrent.data){
@@ -63,12 +62,12 @@ class BinarySearchTree {
         rootCurrent = rootCurrent.left;
       }else{rootCurrent = rootCurrent.right}
     }
-    return false;
+    return false; */
   }
 
   find(data) {
     
-    let rootCurrent = this.rootFirst;
+    /* let rootCurrent = this.rootFirst;
 
     while(rootCurrent !== null){
       if(data === rootCurrent.data){
@@ -77,12 +76,12 @@ class BinarySearchTree {
         rootCurrent = rootCurrent.left;
       }else{rootCurrent = rootCurrent.right}
     }
-    return null;
+    return null; */
   }
 
   remove(data) {
     
-    let rootCurrent = this.rootFirst;
+    /* let rootCurrent = this.rootFirst;
     let rootParent = new Node(null);
     while (rootCurrent !== null) {
       if (data === rootCurrent.data) {
@@ -126,28 +125,32 @@ class BinarySearchTree {
         rootParent = rootCurrent;
         rootCurrent = rootCurrent.right;
       }
-    }
+    } */
   }
 
   min() {
     
-    let rootCurrent = this.rootFirst;
+    /* let rootCurrent = this.rootFirst;
     while (rootCurrent !== null && rootCurrent.left !== null){
       rootCurrent = rootCurrent.left;
     }
-    return (rootCurrent === null ? null : rootCurrent.data)
+    return (rootCurrent === null ? null : rootCurrent.data) */
   }
 
   max() {
     
-    let rootCurrent = this.rootFirst;
+    /* let rootCurrent = this.rootFirst;
     while (rootCurrent !== null && rootCurrent.right !== null){
       rootCurrent = rootCurrent.right;
     }
-    return (rootCurrent === null ? null : rootCurrent.data)
+    return (rootCurrent === null ? null : rootCurrent.data) */
   }
 }
 
 module.exports = {
   BinarySearchTree
 };
+
+
+
+
